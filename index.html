@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f0f7">
+  <meta name="description" content="A little collection of memories, videos, and letters made just for you.">
+  <title>A Little Something For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Back to top"><span class="wordmark-mark">✳</span><span id="wordmarkText">for someone special</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#memories">Memories</a>
+        <a href="#videos">Videos</a>
+        <a href="#letters">Letters</a>
+        <a href="#little-things">The little things</a>
+      </nav>
+      <a class="header-button" href="#letters">A note for you <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span><span id="eyebrowText">A little corner of the internet, just for you</span></p>
+          <h1 id="heroTitle">Some people make<br><em>ordinary days</em><br>feel special.</h1>
+          <p class="hero-description" id="heroDescription">So I collected a few moments, a few words, and a few things I hope will make you smile.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#memories">Take a look around <span aria-hidden="true">↓</span></a>
+            <span class="handwritten" id="heroSignature">made with a little extra care ♡</span>
+          </div>
+          <div class="hero-meta"><span>01 / A small collection</span><span id="heroDate">Made especially for you</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-frame">
+            <img id="coverPhoto" src="assets/photos/cover.jpg" alt="A favourite photo" loading="eager">
+            <div class="photo-fallback" id="coverFallback"><span>♡</span><small>Add your cover photo</small><code>assets/photos/cover.jpg</code></div>
+          </div>
+          <div class="photo-sticker sticker-top">a favourite moment ✿</div>
+          <div class="photo-sticker sticker-bottom"><span>✦</span> <span id="photoStickerText">kept close, always</span></div>
+          <span class="hero-scribble" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="dedication-band" aria-label="Dedication">
+        <p id="dedicationText">For all the little moments that deserve to be remembered.</p>
+        <span aria-hidden="true">✦</span>
+      </section>
+
+      <section class="content-section section-wrap" id="memories">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 · snapshots</p><h2 id="memoriesTitle">A few <em>favourite</em> memories.</h2></div>
+          <p class="section-intro" id="memoriesIntro">Little frames from days I want to remember. Add your own photos and captions in <code>content.js</code>.</p>
+        </div>
+        <div class="photo-grid" id="photoGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="video-section" id="videos">
+        <div class="section-wrap">
+          <div class="section-heading light-heading">
+            <div><p class="eyebrow">02 · press play</p><h2 id="videosTitle">Moments in <em>motion.</em></h2></div>
+            <p class="section-intro" id="videosIntro">Some memories are even better when they move. Add MP4 videos to the videos folder.</p>
+          </div>
+          <div class="video-grid" id="videoGrid"></div>
+        </div>
+      </section>
+
+      <section class="content-section letters-section section-wrap" id="letters">
+        <div class="section-heading">
+          <div><p class="eyebrow">03 · words from the heart</p><h2 id="lettersTitle">A few things I <em>wanted to say.</em></h2></div>
+          <p class="section-intro" id="lettersIntro">Open each little envelope when you feel like reading something thoughtful.</p>
+        </div>
+        <div class="letters-grid" id="lettersGrid"></div>
+      </section>
+
+      <section class="little-things-section" id="little-things">
+        <div class="section-wrap little-things-wrap">
+          <div class="little-things-copy">
+            <p class="eyebrow">04 · a little list</p>
+            <h2 id="littleThingsTitle">The little things<br><em>that matter.</em></h2>
+            <p id="littleThingsIntro">Sometimes the smallest things are the ones that stay with us the longest.</p>
+          </div>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </section>
+
+      <section class="closing-section section-wrap">
+        <div class="closing-card">
+          <span class="closing-star" aria-hidden="true">✳</span>
+          <p class="eyebrow" id="closingEyebrow">And, before you go…</p>
+          <h2 id="closingTitle">You make the world<br><em>a little brighter.</em></h2>
+          <p id="closingMessage">I hope this page reminds you how appreciated you are. Keep being your wonderful self.</p>
+          <p class="closing-signature" id="closingSignature">With warm wishes, <span>Someone who cares ♡</span></p>
+          <button class="button button-light" id="surpriseButton" type="button">One last little surprise <span aria-hidden="true">✦</span></button>
+          <p class="surprise-message" id="surpriseMessage" hidden>Here's a reminder: you are one of a kind. Never forget that. ♡</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span id="footerText">A page made with care.</span><a href="#top">Back to the beginning ↑</a></footer>
+  </div>
+
+  <dialog class="photo-dialog" id="photoDialog" aria-label="Photo preview">
+    <form method="dialog"><button class="dialog-close" aria-label="Close photo preview">×</button></form>
+    <img id="dialogImage" src="" alt="">
+    <p id="dialogCaption"></p>
+  </dialog>
+</body>
+</html>
