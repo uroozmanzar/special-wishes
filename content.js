@@ -14,7 +14,7 @@ window.WISHING_PAGE_CONTENT = {
     heroDescription: "So I collected a few moments, a few words, and a few things I hope will make you smile.",
     heroSignature: "made with a little extra care ♡",
     heroDate: "A collection of favourite moments",
-    coverPhoto: "assets/photos/cover.jpg",
+    coverPhoto:"assets/photos/1734095600660.jpg",
     coverAlt: "A favourite photo",
     photoSticker: "kept close, always",
     dedication: "For all the little moments that deserve to be remembered.",
